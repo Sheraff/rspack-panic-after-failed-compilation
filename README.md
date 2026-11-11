@@ -1,6 +1,6 @@
 # rspack: panics after a failed compilation step
 
-Issues: ISSUE_HOOK (`hook.cjs`), ISSUE_REBUILD (`rebuild.cjs`)
+Issues: https://github.com/web-infra-dev/rspack/issues/16578 (`hook.cjs`), https://github.com/web-infra-dev/rspack/issues/16579 (`rebuild.cjs`)
 
 - `hook.cjs`: a `finishMake` tap rejects; the next compilation of the same compiler aborts the process.
 - `rebuild.cjs`: `compilation.rebuildModule()` answers an error (a `buildModule` tap throws); the compilation then aborts the process.
